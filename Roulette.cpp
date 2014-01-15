@@ -12,9 +12,13 @@ enum{RED,BLACK}; // myArr[RED] == myArr[0]. myArr[BLACK] == myArr[1]
 map  <int, int> vals;
 map <int, int> seqs;
 vector <int> keys;
+
 int main()
 {
 	cout << "Roulette" << endl;
+
+	vals[RED] = 0;
+	vals[BLACK] = 0;
 
 	srand(time(0));
 	int prevRnd = rand() % 2;	
